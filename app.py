@@ -6,10 +6,11 @@ st.set_page_config(
     layout="centered"
 )
 
-API_URL = "http://localhost:8000"
+API_URL = "https://ai-code-reviewer-3g5p.onrender.com/"
 
 st.title("AI Code Reviewer")
 st.caption("Review your code for bugs, security issues and best practices")
+st.info("⏳ First request may take 30–60 seconds while the server wakes up.")
 
 st.divider()
 
