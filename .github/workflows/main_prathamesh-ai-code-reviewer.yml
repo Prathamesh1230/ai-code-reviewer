@@ -22,12 +22,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      
       - name: Validate project files
         run: |
-          test -f streamlit_app.py
+          test -f app.py
           test -f requirements.txt
-          test -d src
-          test -d data
 
       - name: Upload application source
         uses: actions/upload-artifact@v4
