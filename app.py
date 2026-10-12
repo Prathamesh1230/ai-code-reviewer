@@ -6,7 +6,7 @@ st.set_page_config(
     layout="centered"
 )
 
-API_URL = "https://ai-code-reviewer-3g5p.onrender.com/"
+API_URL = "https://prathamesh-ai-code-reviewer-e2cuewe2ezc3gadj.indiasouthcentral-01.azurewebsites.net"
 
 st.title("AI Code Reviewer")
 st.caption("Review your code for bugs, security issues and best practices")
