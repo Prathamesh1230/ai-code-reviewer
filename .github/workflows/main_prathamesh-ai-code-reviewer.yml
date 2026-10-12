@@ -32,16 +32,18 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: python-app
+
           path: |
-            streamlit_app.py
+            app.py
+            main.py
+            reviewer.py
+            github_fetch.py
             requirements.txt
-            src/
-            data/
-            .streamlit/
             README.md
+            .streamlit/
             !**/__pycache__/**
             !**/*.pyc
-          if-no-files-found: warn
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
